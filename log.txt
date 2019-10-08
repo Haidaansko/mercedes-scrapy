@@ -1,0 +1,2659 @@
+2019-10-08 15:28:29 [scrapy.utils.log] INFO: Scrapy 1.7.3 started (bot: mercedes_scrapper)
+2019-10-08 15:28:29 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.8 (default, May  7 2019, 14:58:50) - [GCC 5.4.0 20160609], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Linux-4.4.0-151-generic-x86_64-with-Ubuntu-16.04-xenial
+2019-10-08 15:28:29 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mercedes_scrapper', 'CONCURRENT_REQUESTS': 4, 'FEED_EXPORT_ENCODING': 'utf-8', 'FEED_FORMAT': 'json', 'FEED_URI': './scraped_data.json', 'NEWSPIDER_MODULE': 'mercedes_scrapper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['mercedes_scrapper.spiders'], 'USER_AGENT': '"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'}
+2019-10-08 15:28:29 [scrapy.extensions.telnet] INFO: Telnet Password: 64f519d426559e85
+2019-10-08 15:28:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2019-10-08 15:28:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-10-08 15:28:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-10-08 15:28:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-10-08 15:28:29 [scrapy.core.engine] INFO: Spider opened
+2019-10-08 15:28:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-10-08 15:28:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-10-08 15:28:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/robots.txt> (referer: None)
+2019-10-08 15:28:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru> (referer: None)
+2019-10-08 15:28:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/> (referer: https://sales.mercedes-panavto.ru)
+2019-10-08 15:28:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/> (referer: https://sales.mercedes-panavto.ru)
+2019-10-08 15:28:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/> (referer: https://sales.mercedes-panavto.ru)
+2019-10-08 15:28:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/> (referer: https://sales.mercedes-panavto.ru)
+2019-10-08 15:28:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/x-class/> (referer: https://sales.mercedes-panavto.ru)
+2019-10-08 15:28:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N057413/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N057413/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Двухцветная искусственная кожа ARTICO, Серая Нева / Черный',
+          'monthly': 'Ежемесячный платеж 60 094 руб.',
+          'name': 'CLA 200 Sport черный купе АКПП',
+          'price': ['2 500 000 руб.', 'специальная цена*', '2 295 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  344 250 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N057413/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F938421/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F938421/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.5                                / '
+                    '5.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Бежевый шелк/черный"',
+          'monthly': 'Ежемесячный платеж 86 116 руб.',
+          'name': 'C 200 4MATIC Sport купе бежевый купе АКПП',
+          'price': ['3 288 800 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  493 320 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F938421/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R535090/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R535090/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.6 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 62 948 руб.',
+          'name': 'C 180 Avantgarde Edition черный седан АКПП',
+          'price': ['2 404 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  360 600 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R535090/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J044003/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J044003/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Bertrix черная',
+          'monthly': 'Ежемесячный платеж 52 294 руб.',
+          'name': 'B 180 Style белый минивен АКПП',
+          'price': ['2 332 200 руб.', 'специальная цена*', '1 997 120 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  299 568 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J044003/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/x-class/x-350-d-4matic-power-x-470/WDF4702521G034475/> (referer: https://sales.mercedes-panavto.ru/new_cars/x-class/)
+2019-10-08 15:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/x-class/x-350-d-4matic-power-x-470/WDF4702521G034475/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '2987                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '258 л.с. / 190 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'дизель                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '10.3                                / '
+                    '8.3                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 7.9 сек.\n'
+                    '                                                    ',
+          'inner': 'Кожа, цвет черный',
+          'monthly': 'Ежемесячный платеж  123 323 руб.',
+          'name': 'X 350 d 4MATIC POWER черный пикап АКПП',
+          'price': ['5 091 977 руб.', 'специальная цена*', '4 709 717 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  706 457.55 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/x-350-d-4matic-power-x-470/WDF4702521G034475/'},
+ 'name': 'X-Класс',
+ 'price': 'от 2 939 450 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/'}
+2019-10-08 15:28:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G013187/> (referer: https://sales.mercedes-panavto.ru/new_cars/x-class/)
+2019-10-08 15:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G013187/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '2298                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '190 л.с. / 140 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'дизель                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.8                                / '
+                    '6.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 11.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Кожа, цвет черный',
+          'monthly': 'Ежемесячный платеж 86 362 руб.',
+          'name': 'X 250 d 4MATIC POWER синий внедорожник АКПП',
+          'price': ['4 335 514 руб.', 'специальная цена*', '3 298 178 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  494 726.7 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G013187/'},
+ 'name': 'X-Класс',
+ 'price': 'от 2 939 450 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/'}
+2019-10-08 15:28:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G012149/> (referer: https://sales.mercedes-panavto.ru/new_cars/x-class/)
+2019-10-08 15:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G012149/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '2298                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '190 л.с. / 140 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'дизель                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.8                                / '
+                    '6.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 11.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Кожа, цвет черный',
+          'monthly': 'Ежемесячный платеж 82 134 руб.',
+          'name': 'X 250 d 4MATIC POWER черный внедорожник АКПП',
+          'price': ['4 266 533 руб.', 'специальная цена*', '3 136 714 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  470 507.1 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G012149/'},
+ 'name': 'X-Класс',
+ 'price': 'от 2 939 450 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/'}
+2019-10-08 15:28:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G016490/> (referer: https://sales.mercedes-panavto.ru/new_cars/x-class/)
+2019-10-08 15:28:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G016490/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '2298                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '190 л.с. / 140 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'дизель                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.8                                / '
+                    '6.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 11.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Кожа, цвет коричневый орех',
+          'monthly': 'Ежемесячный платеж 80 589 руб.',
+          'name': 'X 250 d 4MATIC POWER черный внедорожник АКПП',
+          'price': ['4 151 945 руб.', 'специальная цена*', '3 077 710 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  461 656.5 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G016490/'},
+ 'name': 'X-Класс',
+ 'price': 'от 2 939 450 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/'}
+2019-10-08 15:28:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G015154/> (referer: https://sales.mercedes-panavto.ru/new_cars/x-class/)
+2019-10-08 15:28:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G015154/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '2298                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '190 л.с. / 140 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'дизель                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.8                                / '
+                    '6.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 11.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Кожа, цвет коричневый орех',
+          'monthly': 'Ежемесячный платеж 80 589 руб.',
+          'name': 'X 250 d 4MATIC POWER синий внедорожник АКПП',
+          'price': ['4 151 945 руб.', 'специальная цена*', '3 077 710 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  461 656.5 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G015154/'},
+ 'name': 'X-Класс',
+ 'price': 'от 2 939 450 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/'}
+2019-10-08 15:28:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G015053/> (referer: https://sales.mercedes-panavto.ru/new_cars/x-class/)
+2019-10-08 15:28:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G015053/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '2298                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '190 л.с. / 140 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'дизель                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.8                                / '
+                    '6.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 11.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Кожа, цвет черный',
+          'monthly': 'Ежемесячный платеж 79 507 руб.',
+          'name': 'X 250 d 4MATIC POWER черный внедорожник АКПП',
+          'price': ['4 022 163 руб.', 'специальная цена*', '3 036 384 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  455 457.6 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G015053/'},
+ 'name': 'X-Класс',
+ 'price': 'от 2 939 450 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/'}
+2019-10-08 15:28:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G014812/> (referer: https://sales.mercedes-panavto.ru/new_cars/x-class/)
+2019-10-08 15:28:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G014812/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '2298                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '190 л.с. / 140 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'дизель                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.8                                / '
+                    '6.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 11.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Кожа, цвет черный',
+          'monthly': 'Ежемесячный платеж 78 905 руб.',
+          'name': 'X 250 d 4MATIC POWER черный внедорожник АКПП',
+          'price': ['4 022 163 руб.', 'специальная цена*', '3 013 384 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  452 007.6 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/x-250-d-4matic-power-x-470/WDF4702311G014812/'},
+ 'name': 'X-Класс',
+ 'price': 'от 2 939 450 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/x-class/'}
+2019-10-08 15:28:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J019457/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J019457/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 52 423 руб.',
+          'name': 'B 180 Style  минивен АКПП',
+          'price': ['2 325 042 руб.', 'специальная цена*', '2 002 062 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  300 309.3 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J019457/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J028088/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J028088/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 52 343 руб.',
+          'name': 'B 180 Style красный минивен АКПП',
+          'price': ['2 324 400 руб.', 'специальная цена*', '1 998 984 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  299 847.6 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J028088/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J030994/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J030994/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Bertrix черная',
+          'monthly': 'Ежемесячный платеж 50 357 руб.',
+          'name': 'B 180 Style белый минивен АКПП',
+          'price': ['2 236 200 руб.', 'специальная цена*', '1 923 132 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  288 469.8 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J030994/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J074975/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J074975/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Bertrix черная',
+          'monthly': 'Ежемесячный платеж 58 052 руб.',
+          'name': 'B 180 Style  минивен АКПП',
+          'price': ['2 217 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  332 550 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J074975/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J045520/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J045520/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Bertrix черная',
+          'monthly': 'Ежемесячный платеж 49 384 руб.',
+          'name': 'B 180 Style черный минивен АКПП',
+          'price': ['2 193 000 руб.', 'специальная цена*', '1 885 980 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  282 897 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J045520/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056677/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056677/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Bertrix, двухцветная '
+                   'Черная / Серая Нева',
+          'monthly': 'Ежемесячный платеж 47 062 руб.',
+          'name': 'B 180 Style белый минивен АКПП',
+          'price': ['2 183 400 руб.', 'специальная цена*', '1 797 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  269 598 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056677/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056131/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056131/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Bertrix черная',
+          'monthly': 'Ежемесячный платеж 47 062 руб.',
+          'name': 'B 180 Style белый минивен АКПП',
+          'price': ['2 183 400 руб.', 'специальная цена*', '1 797 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  269 598 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056131/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056213/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056213/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Bertrix, двухцветная '
+                   'сине-черная индиго / черная',
+          'monthly': 'Ежемесячный платеж 47 062 руб.',
+          'name': 'B 180 Style белый минивен АКПП',
+          'price': ['2 183 400 руб.', 'специальная цена*', '1 797 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  269 598 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J056213/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J075036/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J075036/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '136 л.с. / 100 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '7.7                                / '
+                    '4.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 9.0 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Bertrix черная',
+          'monthly': 'Ежемесячный платеж 56 198 руб.',
+          'name': 'B 180 Style черный минивен АКПП',
+          'price': ['2 146 200 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  321 930 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-180-style-w247/WDD2470841J075036/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536381/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536381/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.6 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 62 948 руб.',
+          'name': 'C 180 Avantgarde Edition белый седан АКПП',
+          'price': ['2 404 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  360 600 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536381/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536733/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536733/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.6 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 62 948 руб.',
+          'name': 'C 180 Avantgarde Edition синий седан АКПП',
+          'price': ['2 404 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  360 600 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536733/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R537501/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R537501/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.6 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 62 948 руб.',
+          'name': 'C 180 Avantgarde Edition синий седан АКПП',
+          'price': ['2 404 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  360 600 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R537501/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536254/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R523888/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536254/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.6 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 62 948 руб.',
+          'name': 'C 180 Avantgarde Edition белый седан АКПП',
+          'price': ['2 404 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  360 600 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R536254/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R523888/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 49 681 руб.',
+          'name': 'C 180 Avantgarde Edition черный седан АКПП',
+          'price': ['2 350 000 руб.', 'специальная цена*', '1 897 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  284 598 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R523888/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R520677/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R520677/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 57 065 руб.',
+          'name': 'C 180 Avantgarde Edition черный седан АКПП',
+          'price': ['2 350 000 руб.', 'специальная цена*', '2 179 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  326 898 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R520677/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R520131/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R520131/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 57 065 руб.',
+          'name': 'C 180 Avantgarde Edition черный седан АКПП',
+          'price': ['2 350 000 руб.', 'специальная цена*', '2 179 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  326 898 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R520131/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R519973/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R519973/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 57 065 руб.',
+          'name': 'C 180 Avantgarde Edition черный седан АКПП',
+          'price': ['2 350 000 руб.', 'специальная цена*', '2 179 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  326 898 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R519973/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R521248/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R521248/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 54 765 руб.',
+          'name': 'C 180 Avantgarde Edition черный седан АКПП',
+          'price': ['2 350 000 руб.', 'специальная цена*', '2 091 500 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  313 725 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050401R521248/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F936535/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F936535/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.5                                / '
+                    '5.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Бежевый шелк/черный"',
+          'monthly': 'Ежемесячный платеж 86 116 руб.',
+          'name': 'C 200 4MATIC Sport купе бежевый купе АКПП',
+          'price': ['3 288 800 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  493 320 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F936535/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053401F919356/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F938900/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053401F919356/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '4.9                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.8 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 73 299 руб.',
+          'name': 'C 180 Sport купе синий купе АКПП',
+          'price': ['3 276 800 руб.', 'специальная цена*', '2 799 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  419 898 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053401F919356/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F938900/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.5                                / '
+                    '5.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Бежевый шелк/черный"',
+          'monthly': 'Ежемесячный платеж 85 425 руб.',
+          'name': 'C 200 4MATIC Sport купе синий купе АКПП',
+          'price': ['3 262 400 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  489 360 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-sport-kupe-c-205/WDD2053791F938900/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053761F959057/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053761F959057/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '4.9                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.8 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 83 697 руб.',
+          'name': 'C 180 Sport купе синий купе АКПП',
+          'price': ['3 196 400 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  479 460 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053761F959057/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053761F960870/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053761F960870/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '4.9                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.8 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 83 697 руб.',
+          'name': 'C 180 Sport купе серый купе АКПП',
+          'price': ['3 196 400 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  479 460 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-sport-kupe-c-205/WDD2053761F960870/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-premium-kupe-c-205/WDD2053791F940981/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-premium-kupe-c-205/WDD2053791F940981/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.5                                / '
+                    '5.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Бежевый шелк/черный"',
+          'monthly': 'Ежемесячный платеж 81 895 руб.',
+          'name': 'C 200 4MATIC Premium купе белый купе АКПП',
+          'price': ['3 127 600 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  469 140 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-premium-kupe-c-205/WDD2053791F940981/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-premium-kupe-c-205/WDD2053791F941200/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-premium-kupe-c-205/WDD2053791F941200/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.5                                / '
+                    '5.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.4 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Бежевый шелк/черный"',
+          'monthly': 'Ежемесячный платеж 81 895 руб.',
+          'name': 'C 200 4MATIC Premium купе белый купе АКПП',
+          'price': ['3 127 600 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  469 140 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-200-4matic-premium-kupe-c-205/WDD2053791F941200/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-premium-kupe-c-205/WDD2053401F925293/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/)
+2019-10-08 15:28:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-premium-kupe-c-205/WDD2053401F925293/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '4.9                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.8 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Бежевый шелк/черный"',
+          'monthly': 'Ежемесячный платеж 65 392 руб.',
+          'name': 'C 180 Premium купе белый купе АКПП',
+          'price': ['2 925 200 руб.', 'специальная цена*', '2 497 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  374 598 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/c-180-premium-kupe-c-205/WDD2053401F925293/'},
+ 'name': 'C-Класс купе',
+ 'price': 'от 2 675 850 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class_coupe/'}
+2019-10-08 15:28:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044518/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044518/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 60 094 руб.',
+          'name': 'CLA 200 Sport синий купе АКПП',
+          'price': ['2 500 000 руб.', 'специальная цена*', '2 295 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  344 250 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044518/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044395/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044595/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044395/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Двухцветная искусственная кожа ARTICO, Серая Нева / Черный',
+          'monthly': 'Ежемесячный платеж 60 094 руб.',
+          'name': 'CLA 200 Sport белый купе АКПП',
+          'price': ['2 500 000 руб.', 'специальная цена*', '2 295 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  344 250 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044395/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044595/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 60 094 руб.',
+          'name': 'CLA 200 Sport синий купе АКПП',
+          'price': ['2 500 000 руб.', 'специальная цена*', '2 295 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  344 250 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N044595/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N043228/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N043228/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 65 462 руб.',
+          'name': 'CLA 200 Sport серый купе АКПП',
+          'price': ['2 500 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  375 000 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N043228/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N042461/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N042461/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 60 094 руб.',
+          'name': 'CLA 200 Sport красный купе АКПП',
+          'price': ['2 500 000 руб.', 'специальная цена*', '2 295 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  344 250 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N042461/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N043851/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N043851/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 60 094 руб.',
+          'name': 'CLA 200 Sport серый купе АКПП',
+          'price': ['2 500 000 руб.', 'специальная цена*', '2 295 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  344 250 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N043851/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N058194/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N058194/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Двухцветная искусственная кожа ARTICO, Серая Нева / Черный',
+          'monthly': 'Ежемесячный платеж 65 462 руб.',
+          'name': 'CLA 200 Sport белый купе АКПП',
+          'price': ['2 500 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  375 000 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N058194/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N039228/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N039228/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / DINAMICA',
+          'monthly': 'Ежемесячный платеж 65 462 руб.',
+          'name': 'CLA 200 Sport белый купе АКПП',
+          'price': ['2 500 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  375 000 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N039228/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N069642/> (referer: https://sales.mercedes-panavto.ru/new_cars/cla-class/)
+2019-10-08 15:28:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N069642/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.7                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Двухцветная искусственная кожа ARTICO, Серая Нева / Черный',
+          'monthly': 'Ежемесячный платеж 65 462 руб.',
+          'name': 'CLA 200 Sport черный купе АКПП',
+          'price': ['2 500 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  375 000 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/cla-200-sport-s-118/WDD1183871N069642/'},
+ 'name': 'CLA',
+ 'price': 'от 2 097 125 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/cla-class/'}
+2019-10-08 15:28:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/?PAGEN_2=2> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/)
+2019-10-08 15:28:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=5> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/)
+2019-10-08 15:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J019801/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/?PAGEN_2=2)
+2019-10-08 15:28:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J019801/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.9                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO, Бежевый Макиато / Черный',
+          'monthly': 'Ежемесячный платеж 58 382 руб.',
+          'name': 'B 200 Progressive красный минивен АКПП',
+          'price': ['2 592 600 руб.', 'специальная цена*', '2 229 636 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  334 445.4 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J019801/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/mercedes-amg-c-43-4matic-w-205/WDD2050641R539978/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=5)
+2019-10-08 15:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/mercedes-amg-c-43-4matic-w-205/WDD2050641R539978/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '2996                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '390 л.с. / 286 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '10.3                                / '
+                    '6.4                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 4.9 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа Артико/Микроволокно Dinamica черная',
+          'monthly': 'Ежемесячный платеж  128 792 руб.',
+          'name': 'Mercedes-AMG C 43 4MATIC черный седан АКПП',
+          'price': ['4 918 600 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  737 790 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/mercedes-amg-c-43-4matic-w-205/WDD2050641R539978/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R515405/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R515405/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 75 603 руб.',
+          'name': 'C 200 4M Sport серый седан АКПП',
+          'price': ['3 281 000 руб.', 'специальная цена*', '2 887 280 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  433 092 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R515405/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-premium-w-205/WDD2050781R522897/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-premium-w-205/WDD2050781R522897/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 68 408 руб.',
+          'name': 'C 200 4M Premium белый седан АКПП',
+          'price': ['3 147 600 руб.', 'специальная цена*', '2 612 508 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  391 876.2 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-premium-w-205/WDD2050781R522897/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R446665/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R517915/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R446665/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 77 308 руб.',
+          'name': 'C 180 Sport Рестайлинг серый седан АКПП',
+          'price': ['2 952 405 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  442 860.75 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R446665/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R517915/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 63 910 руб.',
+          'name': 'C 180 Sport Рестайлинг черный седан АКПП',
+          'price': ['2 940 400 руб.', 'специальная цена*', '2 440 750 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  366 112.5 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R517915/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R444013/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R444013/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 76 358 руб.',
+          'name': 'C 180 Sport Рестайлинг белый седан АКПП',
+          'price': ['2 916 117 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  437 417.55 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R444013/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R511648/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R511648/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 63 559 руб.',
+          'name': 'C 180 Sport Рестайлинг белый седан АКПП',
+          'price': ['2 912 800 руб.', 'специальная цена*', '2 427 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  364 098 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R511648/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R508360/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R508360/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Коричневый / Черный"',
+          'monthly': 'Ежемесячный платеж 62 192 руб.',
+          'name': 'C 180 Sport Рестайлинг синий седан АКПП',
+          'price': ['2 890 000 руб.', 'специальная цена*', '2 375 120 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  356 268 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R508360/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-premium-w-205/WDD2050401R499414/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-premium-w-205/WDD2050401R499414/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 56 303 руб.',
+          'name': 'C 180 Premium белый седан АКПП',
+          'price': ['2 615 600 руб.', 'специальная цена*', '2 150 240 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  322 536 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-premium-w-205/WDD2050401R499414/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-premium-w-205/WDD2050401R510829/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-premium-w-205/WDD2050401R510829/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань черная',
+          'monthly': 'Ежемесячный платеж 52 303 руб.',
+          'name': 'C 180 Premium черный седан АКПП',
+          'price': ['2 543 600 руб.', 'специальная цена*', '1 997 450 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  299 617.5 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-premium-w-205/WDD2050401R510829/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R544330/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R544330/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.6 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Бежевый шелк/черный"',
+          'monthly': 'Ежемесячный платеж 65 430 руб.',
+          'name': 'C 180 Avantgarde Edition синий седан АКПП',
+          'price': ['2 498 800 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  374 820 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R544330/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R538664/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R538664/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.6 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Бежевый шелк/черный"',
+          'monthly': 'Ежемесячный платеж 65 430 руб.',
+          'name': 'C 180 Avantgarde Edition белый седан АКПП',
+          'price': ['2 498 800 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  374 820 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R538664/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R542807/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=2)
+2019-10-08 15:28:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R542807/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.6 сек.\n'
+                    '                                                    ',
+          'inner': 'Ткань/ искусственная кожа Артико, черная',
+          'monthly': 'Ежемесячный платеж 63 577 руб.',
+          'name': 'C 180 Avantgarde Edition серый седан АКПП',
+          'price': ['2 428 000 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  364 200 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-avantgarde-edition-w-205/WDD2050761R542807/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516886/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516886/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 72 666 руб.',
+          'name': 'C 200 4M Sport белый седан АКПП',
+          'price': ['3 144 800 руб.', 'специальная цена*', '2 775 120 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  416 268 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516886/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516549/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516549/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 73 288 руб.',
+          'name': 'C 200 4M Sport белый седан АКПП',
+          'price': ['3 144 800 руб.', 'специальная цена*', '2 798 872 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  419 830.8 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516549/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516536/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516536/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 73 288 руб.',
+          'name': 'C 200 4M Sport белый седан АКПП',
+          'price': ['3 144 800 руб.', 'специальная цена*', '2 798 872 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  419 830.8 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516536/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R523856/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R522867/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R523856/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 73 176 руб.',
+          'name': 'C 200 4M Sport синий седан АКПП',
+          'price': ['3 140 000 руб.', 'специальная цена*', '2 794 600 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  419 190 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R523856/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R522867/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Коричневый / Черный"',
+          'monthly': 'Ежемесячный платеж 72 672 руб.',
+          'name': 'C 200 4M Sport белый седан АКПП',
+          'price': ['3 118 400 руб.', 'специальная цена*', '2 775 376 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  416 306.4 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R522867/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R512044/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R512044/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 65 392 руб.',
+          'name': 'C 180 Sport Рестайлинг черный седан АКПП',
+          'price': ['3 032 800 руб.', 'специальная цена*', '2 497 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  374 598 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R512044/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R443659/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R443659/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 78 022 руб.',
+          'name': 'C 180 Sport Рестайлинг серый седан АКПП',
+          'price': ['2 979 693 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  446 953.95 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R443659/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R437553/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R437553/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 77 687 руб.',
+          'name': 'C 180 Sport Рестайлинг черный седан АКПП',
+          'price': ['2 966 877 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  445 031.55 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R437553/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R445133/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=3)
+2019-10-08 15:28:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R445133/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1595                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'задний                                                            '
+                    'расход город/трасса, л: '
+                    '7.4                                / '
+                    '5.0                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.5 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 77 521 руб.',
+          'name': 'C 180 Sport Рестайлинг белый седан АКПП',
+          'price': ['2 960 541 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  444 081.15 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-180-sport-restayling-w-205/WDD2050401R445133/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R541331/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R541331/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 85 645 руб.',
+          'name': 'C 200 4M Sport серый седан АКПП',
+          'price': ['3 270 800 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  490 620 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R541331/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R519871/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R519871/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 76 028 руб.',
+          'name': 'C 200 4M Sport синий седан АКПП',
+          'price': ['3 262 400 руб.', 'специальная цена*', '2 903 536 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  435 530.4 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R519871/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R555954/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R555954/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Коричневый / Черный"',
+          'monthly': 'Ежемесячный платеж 85 111 руб.',
+          'name': 'C 200 4M Sport серый седан АКПП',
+          'price': ['3 250 400 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  487 560 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R555954/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R515078/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R515078/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 70 632 руб.',
+          'name': 'C 200 4M Sport черный седан АКПП',
+          'price': ['3 239 000 руб.', 'специальная цена*', '2 697 450 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  404 617.5 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R515078/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R544693/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R544693/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 84 797 руб.',
+          'name': 'C 200 4M Sport черный седан АКПП',
+          'price': ['3 238 400 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  485 760 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R544693/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R555873/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R555873/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 84 797 руб.',
+          'name': 'C 200 4M Sport черный седан АКПП',
+          'price': ['3 238 400 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  485 760 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R555873/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R542091/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R542091/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 84 231 руб.',
+          'name': 'C 200 4M Sport синий седан АКПП',
+          'price': ['3 216 800 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  482 520 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R542091/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R548745/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R548745/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1991                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '204 л.с. / 150 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Микроволокно Dinamica/Искусственная кожа Artico, черная',
+          'monthly': 'Ежемесячный платеж 84 168 руб.',
+          'name': 'C 200 4M Sport белый седан АКПП',
+          'price': ['3 214 400 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  482 160 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050791R548745/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R524085/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=4)
+2019-10-08 15:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R524085/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Коричневый / Черный"',
+          'monthly': 'Ежемесячный платеж 74 630 руб.',
+          'name': 'C 200 4M Sport бежевый седан АКПП',
+          'price': ['3 202 400 руб.', 'специальная цена*', '2 850 136 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  427 520.4 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R524085/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R508381/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=5)
+2019-10-08 15:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R508381/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 74 036 руб.',
+          'name': 'C 200 4M Sport черный седан АКПП',
+          'price': ['3 407 000 руб.', 'специальная цена*', '2 827 450 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  424 117.5 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R508381/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R514928/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=5)
+2019-10-08 15:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R514928/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Коричневый / Черный"',
+          'monthly': 'Ежемесячный платеж 73 253 руб.',
+          'name': 'C 200 4M Sport белый седан АКПП',
+          'price': ['3 388 400 руб.', 'специальная цена*', '2 797 540 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  419 631 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R514928/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516606/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=5)
+2019-10-08 15:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516606/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Коричневый / Черный"',
+          'monthly': 'Ежемесячный платеж 73 195 руб.',
+          'name': 'C 200 4M Sport белый седан АКПП',
+          'price': ['3 366 800 руб.', 'специальная цена*', '2 795 320 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  419 298 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R516606/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R511959/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=5)
+2019-10-08 15:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R511959/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO черная',
+          'monthly': 'Ежемесячный платеж 72 194 руб.',
+          'name': 'C 200 4M Sport черный седан АКПП',
+          'price': ['3 324 800 руб.', 'специальная цена*', '2 757 120 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  413 568 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R511959/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:52 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2019-10-08 15:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R519600/> (referer: https://sales.mercedes-panavto.ru/new_cars/c-class/?PAGEN_2=5)
+2019-10-08 15:28:52 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-10-08 15:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R519600/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1497                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '184 л.с. / 135 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'п-полный                                                            '
+                    'расход город/трасса, л: '
+                    '9.0                                / '
+                    '5.6                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.1 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусcтвенная кожа Artico, "Коричневый / Черный"',
+          'monthly': 'Ежемесячный платеж 71 365 руб.',
+          'name': 'C 200 4M Sport черный седан АКПП',
+          'price': ['3 289 400 руб.', 'специальная цена*', '2 725 450 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  408 817.5 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/c-200-4m-sport-w-205/WDD2050781R519600/'},
+ 'name': 'C-Класс',
+ 'price': 'от 2 267 070 руб.',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/c-class/'}
+2019-10-08 15:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J045165/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/?PAGEN_2=2)
+2019-10-08 15:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J045165/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.9                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Fl?ron, двухцветная  '
+                   'черная / коричневая Баия',
+          'monthly': 'Ежемесячный платеж 57 450 руб.',
+          'name': 'B 200 Progressive белый минивен АКПП',
+          'price': ['2 551 200 руб.', 'специальная цена*', '2 194 032 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  329 104.8 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J045165/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J059339/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/?PAGEN_2=2)
+2019-10-08 15:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J059339/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.9                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO, Бежевый Макиато / Черный',
+          'monthly': 'Ежемесячный платеж 55 680 руб.',
+          'name': 'B 200 Progressive белый минивен АКПП',
+          'price': ['2 472 600 руб.', 'специальная цена*', '2 126 436 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  318 965.4 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J059339/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J062672/> (referer: https://sales.mercedes-panavto.ru/new_cars/b-class/?PAGEN_2=2)
+2019-10-08 15:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J062672/>
+{'cars': {'engine': '\n'
+                    '                            '
+                    '1332                            см,\n'
+                    '                            \n'
+                    '                                                            '
+                    '150 л.с. / 110 кВт\n'
+                    '                            \n'
+                    '                            тип топлива: '
+                    'бензин                            привод: '
+                    'передний                                                            '
+                    'расход город/трасса, л: '
+                    '6.9                                / '
+                    '4.9                            \n'
+                    '                                                            '
+                    'разгон до 100 км/ч: 8.2 сек.\n'
+                    '                                                    ',
+          'inner': 'Искусственная кожа ARTICO / Ткань Fl?ron, двухцветная  '
+                   'черная / коричневая Баия',
+          'monthly': 'Ежемесячный платеж 55 288 руб.',
+          'name': 'B 200 Progressive синий минивен АКПП',
+          'price': ['2 455 200 руб.', 'специальная цена*', '2 111 472 руб.'],
+          'special': ['Компенсацию при сдаче в трейд-ин своего автомобиля',
+                      'Улучшенное коммерческое предложение при оформлении '
+                      'полиса КАСКО'],
+          'start': 'Первоначальный взнос от  316 720.8 руб.',
+          'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/b-200-progressive-w247/WDD2470871J062672/'},
+ 'name': 'B-Класс',
+ 'price': 'Узнать о налачии',
+ 'url': 'https://sales.mercedes-panavto.ru/new_cars/b-class/'}
+2019-10-08 15:28:52 [scrapy.extensions.feedexport] INFO: Stored json feed (86 items) in: ./scraped_data.json
+2019-10-08 15:28:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 46669,
+ 'downloader/request_count': 98,
+ 'downloader/request_method_count/GET': 98,
+ 'downloader/response_bytes': 1638775,
+ 'downloader/response_count': 98,
+ 'downloader/response_status_count/200': 98,
+ 'elapsed_time_seconds': 22.999004,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2019, 10, 8, 12, 28, 52, 859628),
+ 'item_scraped_count': 86,
+ 'log_count/DEBUG': 184,
+ 'log_count/INFO': 12,
+ 'memusage/max': 52768768,
+ 'memusage/startup': 52768768,
+ 'request_depth_max': 3,
+ 'response_received_count': 98,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 97,
+ 'scheduler/dequeued/memory': 97,
+ 'scheduler/enqueued': 135,
+ 'scheduler/enqueued/memory': 135,
+ 'start_time': datetime.datetime(2019, 10, 8, 12, 28, 29, 860624)}
+2019-10-08 15:28:52 [scrapy.core.engine] INFO: Spider closed (shutdown)

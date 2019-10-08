@@ -1,4 +1,4 @@
 #!/bin/bash
 
-scrapy crawl panavto -o ./scraped_data.json 2> log.txt
-python3 reshape.py
+scrapy crawl panavto -o $SCRAPY_FILE 2> $LOG_FILE
+python reshape.py
